@@ -169,7 +169,11 @@
             popularity,
             readyInMinutes,
             image,
-            title
+            title,
+            servings,
+            vegetarian,
+            vegan,
+            glutenFree
           } = response.data;
 
           let _instructions = analyzedInstructions
@@ -187,7 +191,11 @@
             popularity,
             readyInMinutes,
             image,
-            title
+            title,
+            servings,
+            vegetarian,
+            vegan,
+            glutenFree
           };
 
           this.recipe = _recipe;

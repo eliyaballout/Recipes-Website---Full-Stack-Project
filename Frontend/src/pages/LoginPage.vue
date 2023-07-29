@@ -1,7 +1,9 @@
 <template>
   <div>
+
     <div id="background"></div>
     <login-form></login-form>
+    
   </div>
 </template>
 
@@ -10,6 +12,7 @@
 ############################################ scripts ################################################## -->
 
 <script>
+
   import LoginForm from "../components/LoginForm";
   export default {
     name: "LoginPage",
