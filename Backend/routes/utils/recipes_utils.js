@@ -123,22 +123,21 @@ async function addNewRecipe(req) {
   
     await DButils.execQuery(`
       INSERT INTO recipes (
-        user_id, title, readyInMinutes, vegetarian, vegan, glutenFree, servings, instructions, ingredients, image
-      ) VALUES (
-        ${user_id},
-        '${title}',
-        ${readyInMinutes},
-        ${vegetarian},
-        ${vegan},
-        ${glutenFree},
-        ${servings},
-        '${instructions}',
-        '${JSON.stringify(ingredients)}',
-        '${image}' 
-      )
+        user_id, title, readyInMinutes, vegetarian, vegan, glutenFree, servings, instructions, ingredients, image) VALUES (
+            ${user_id},
+            '${title}',
+            ${readyInMinutes},
+            ${vegetarian},
+            ${vegan},
+            ${glutenFree},
+            ${servings},
+            '${instructions}',
+            '${JSON.stringify(ingredients)}',
+            '${image}' 
+        )
     `);
-  }
-  
+}
+
 
 
 

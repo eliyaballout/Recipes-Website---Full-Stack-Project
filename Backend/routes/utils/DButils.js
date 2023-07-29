@@ -1,6 +1,8 @@
 require("dotenv").config();
 const MySql = require("./MySql");
 
+
+
 exports.execQuery = async function (query) {
   let returnValue = []
   const connection = await MySql.connection();

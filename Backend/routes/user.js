@@ -87,7 +87,7 @@ router.get('/myAllRecipes', async (req,res,next) => { //done and checked
 /**
  * This path returns specific user recipe by its id.
  */
-router.get('/myAllRecipes/:recipeId', async (req,res,next) => {
+router.get('/myAllRecipes/:recipeId', async (req,res,next) => { //done and checked
   try{
     const user_id = req.session.user_id;
     if (!user_id) {
@@ -186,7 +186,7 @@ router.get('/familyRecipes', async (req,res,next) => { //done and checked
 /**
  * This path returns specific family recipe by its id.
  */
-router.get('/familyRecipes/:recipeId', async (req,res,next) => {
+router.get('/familyRecipes/:recipeId', async (req,res,next) => { //done and checked
   try{
     const user_id = req.session.user_id;
     if (!user_id) {
