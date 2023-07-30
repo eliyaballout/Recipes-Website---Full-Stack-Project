@@ -28,7 +28,7 @@ And then to start the frontend, run:
 ```
 npm run serve
 ```
-<br>
+<br><br>
 After this , go to the backend terminal and run:
 ```
 npm start
