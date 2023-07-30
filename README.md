@@ -1,8 +1,8 @@
-# ***Recipes-Website---Full-Stack-Project***
+# ***Welcome to FlavorFusion***
 
 
 ## Introduction
-Welcome to our recipes website ***FlavorFusion***. <br>
+Welcome to our recipes website ***FlavorFusion***. This is a Full-stack Project <br>
 Our goal is to inspire and guide you on your culinary journey. From mouthwatering appetizers to delectable main courses and delightful desserts, we have a wide range of recipes to satisfy every palate.<br><br>
 
 Our website based on Client-server architecture.<br>
