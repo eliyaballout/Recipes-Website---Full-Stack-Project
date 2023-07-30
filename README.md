@@ -76,12 +76,12 @@ The currently supported resources are:
 
 ![mainPage](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/5527570a-48a8-43f9-a9cb-086e48b58308) <br><br>
 
-![sidebar](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/0cf017ca-545f-470c-b1d9-29e7ff586518) <br><br>
+![sidebar](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/58562994-8bfc-4c8d-b5a7-6581ec65b719) <br><br>
 
-![register](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/5575ca7b-c69d-4ea9-9bae-0f72e2af47d8) <br><br>
+![register](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/3ebad29b-de6c-490f-bc34-e60a6f7df135) <br><br>
 
-![search](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/a878ab97-cfee-4062-964f-c2041b4dcdda) <br><br>
+![search](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/507c4ed1-b733-4d90-8202-9ab92c22667b) <br><br>
 
-![family](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/fc503e45-cdc8-4f3b-aef2-edd52a975177) <br><br>
+![family](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/11f18796-454a-4db6-b35c-c2b8fec19460) <br><br>
 
-![modal](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/7fc0065e-cfda-491c-b3eb-fd09ab2b8533) <br>
+![modal](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/1f38e965-17fb-4577-801f-ec465b12db05) <br>
