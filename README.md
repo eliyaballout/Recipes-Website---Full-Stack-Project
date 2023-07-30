@@ -74,7 +74,7 @@ The currently supported resources are:
 
 ## Some screenshots from our website
 
-![mainPage](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/7d47e779-abcd-47b7-a2fa-106fa7152576) <br><br>
+![mainPage](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/5527570a-48a8-43f9-a9cb-086e48b58308) <br><br>
 
 ![sidebar](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/0cf017ca-545f-470c-b1d9-29e7ff586518) <br><br>
 
