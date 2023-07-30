@@ -47,7 +47,7 @@ The currently supported resources are:
 * Main recipe page.
 * Random recipes from external api.
 * login page.
-* Registration page .
+* Registration page.
 * Brief recipe Preview details.
 * Recipe search page.
 * Modal recipe creation.
@@ -61,7 +61,7 @@ The currently supported resources are:
 
 
 ## Technologies Used
-* We used express.js and axios,js frameworks.<br>
+* We used express.js and axios,js frameworks.<br><br>
 <img src="https://github.com/devicons/devicon/blob/master/icons/vuejs/vuejs-original.svg" title="Vuejs" alt="Vuejs" width="40" height="40"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg" title="NodeJS" alt="NodeJS" width="40" height="40"/>&nbsp;
@@ -74,3 +74,14 @@ The currently supported resources are:
 
 ## Some screenshots from our website
 
+![mainPage](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/7d47e779-abcd-47b7-a2fa-106fa7152576) <br><br>
+
+![sidebar](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/0cf017ca-545f-470c-b1d9-29e7ff586518) <br><br>
+
+![register](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/5575ca7b-c69d-4ea9-9bae-0f72e2af47d8) <br><br>
+
+![search](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/a878ab97-cfee-4062-964f-c2041b4dcdda) <br><br>
+
+![family](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/fc503e45-cdc8-4f3b-aef2-edd52a975177) <br><br>
+
+![modal](https://github.com/eliyaballout/Recipes-Website---Full-Stack-Project/assets/94072460/7fc0065e-cfda-491c-b3eb-fd09ab2b8533) <br>
