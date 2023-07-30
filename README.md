@@ -21,7 +21,7 @@ So our server side(backend) is also a client to a Spoonacular server that commun
 So as we discussed at section 2 and 3 above, after you have configured all the settings, you need to open 2 separate terminals, one for the backend and another for frontend.<br>
 After that, go to frontend terminal and make sure that you run the build command via:
 ```
-npm tun build
+npm run build
 ```
 
 And then to start the frontend, run:
