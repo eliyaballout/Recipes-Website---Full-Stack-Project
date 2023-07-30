@@ -28,7 +28,7 @@ And then to start the frontend, run:
 ```
 npm run serve
 ```
-<br><br>
+<br>
 After this , go to the backend terminal and run:
 ```
 npm start
@@ -61,7 +61,7 @@ The currently supported resources are:
 
 
 ## Technologies Used
-* We used express.js and axios,js frameworks.
+* We used express.js and axios,js frameworks.<br>
 <img src="https://github.com/devicons/devicon/blob/master/icons/vuejs/vuejs-original.svg" title="Vuejs" alt="Vuejs" width="40" height="40"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg" title="NodeJS" alt="NodeJS" width="40" height="40"/>&nbsp;
