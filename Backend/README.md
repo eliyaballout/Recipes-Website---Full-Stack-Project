@@ -17,7 +17,7 @@ We implemented the frontend using: Node.js, MySQL, html and css.<br><br>
 
 1. After downloading and extracting the ZIP file, open a separate terminal for Backend folder and run `npm install` to install all the required dependencies.
 2. The website is configured to run locally, on your local computer. Additional to this, the database is also configured to work locally.
-3. If you want to expose the website to the internet you have to own a server or a machine that is also exposed to the internet, and then I will guide you how to modify the code to be compatible to run on the internet.<br><br><br>
+3. If you want to expose the website to the internet you have to own a server or a machine that is also exposed to the internet, and then I will guide you how to modify the code to be compatible to run on the internet.<br><br>
 
 
 
@@ -33,7 +33,7 @@ In order to run the Backend either locally or remotely, you have to add `.env` f
     spooncular_apiKey = YOUR_API_KEY
     ```
 * In `MySQLPassword` field, add your DB password.
-* In `spooncular_apiKey` field, add your spoonacular API key. **In order to get spoonacular API, just go to [Spoonaclar website](https://spoonacular.com/food-api), and sign up.** <br><br><br>
+* In `spooncular_apiKey` field, add your spoonacular API key. **In order to get spoonacular API, just go to [Spoonaclar website](https://spoonacular.com/food-api), and sign up.** <br><br>
 
 
 
@@ -46,8 +46,15 @@ Now we have 1 files to modify:
    * Uncomment line 31 and 35.
    * Change the port number from 3000 to 80 in line 52.
    * Put the lines 92 to 101 in a comment.
-   * Uncomment line 104. <br><br><br>
+   * Uncomment line 104. <br><br>
 
+
+In order to expose the website to the internet and configure it to work over https with SSL you need a certificate, and to add the public and private key to the backend folder using these to files to add:
+```
+fullchain.pem
+privkey.pem
+``` 
+<br><br>
 
 
 ## Running

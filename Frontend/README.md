@@ -9,9 +9,11 @@ We implemented the frontend using: Vue.js, javascript, html and css.<br><br>
 <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg" title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
 <br><br>
 
+
+
 ## Installation
 
-1. After downloading and extracting the ZIP file, open a terminal for Frontend folder and run `npm install` to install all the required dependencies.
+1. After downloading and extracting the ZIP file, open a separate terminal for Frontend folder and run `npm install` to install all the required dependencies.
 2. The website is configured to run locally, on your local computer.
 3. If you want to expose the website to the internet you have to own a server or a machine that is also exposed to the internet, and then I will guide you how to modify the code to be compatible to run on the internet.<br><br><br>
 
