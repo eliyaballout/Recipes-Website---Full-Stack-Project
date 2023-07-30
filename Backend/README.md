@@ -1,6 +1,7 @@
 # ***Backend Implementation.***
 
 This is the Backend of our website FlavorFusion.<br> 
+This Backend based on the OpenAPI 3.0 specification: https://app.swaggerhub.com/apis-docs/eliyabal/API/1.0.0 <br>
 We used an external food Api - Spoonacular API. to get recipes and information about them.<br>
 Also we build a database to store some other recipes, and other things.<br>
 We implemented the frontend using: Node.js, MySQL, html and css.<br><br>
@@ -17,7 +18,9 @@ We implemented the frontend using: Node.js, MySQL, html and css.<br><br>
 
 1. After downloading and extracting the ZIP file, open a separate terminal for Backend folder and run `npm install` to install all the required dependencies.
 2. The website is configured to run locally, on your local computer. Additional to this, the database is also configured to work locally.
-3. If you want to expose the website to the internet you have to own a server or a machine that is also exposed to the internet, and then I will guide you how to modify the code to be compatible to run on the internet.<br><br>
+3. You need to install and configure the database using MySQL, [head over here](https://www.javatpoint.com/how-to-install-mysql) to learn more on how to install and configure the DB.
+4. In order to work easily with the DB, [here](https://www.youtube.com/watch?v=7dEjRaDw1Hg) the installation instructions for the Vscode plugin.
+5. If you want to expose the website to the internet you have to own a server or a machine that is also exposed to the internet, and then I will guide you how to modify the code to be compatible to run on the internet.<br><br>
 
 
 
@@ -75,3 +78,4 @@ Now we will run the backend, in the same terminal that you have openned for the 
 ```
 npm server
 ```
+<br>

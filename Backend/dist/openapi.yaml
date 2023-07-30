@@ -5,12 +5,14 @@ info:
   description: API for recipes project
   version: 1.0.1
 
+
 servers:
-# local:
-- url: "http://127.0.0.1:3000"
+- description: local
+    url: "http://127.0.0.1:3000"
 # remote:
-- url: "https://FlavorFusion.cs.bgu.ac.il"
-  description: SwaggerHub API Auto Mocking hey
+- description: SwaggerHub API Auto Mocking hey
+  url: "https://FlavorFusion.cs.bgu.ac.il"
+
 
 tags:
 - name: Auth
@@ -340,6 +342,11 @@ paths:
         - Recipes
       summary: Search for recipes from spoonacular, External API.
       description: Return the some recipes according to the user input number, 5 by defualt.
+      requestBody:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Search'
        responses:
         "200":
           description: Successfully returned search results.
@@ -352,11 +359,6 @@ paths:
                   $ref: '#/components/schemas/Recipe'
         "400":
           description: invalid input.
-        requestBody:
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Search'
 
 
 
@@ -364,6 +366,13 @@ paths:
 ######################################## COMPONENTS ############################################
 
 components:
+  securitySchemes:
+      cookieAuth:
+        type: apiKey
+        in: cookie
+        name: session_token
+
+
   schemas:
     
     User:
@@ -400,11 +409,11 @@ components:
           type: string
           description: User's email.
           example: my_name12@gmail.com
-        # image-url:
-        #   pattern: URL
-        #   type: string
-        #   description: URL for the user's image
-        #   example: https://cloudinary.com/
+        image:
+          pattern: URL
+          type: string
+          description: URL for the user's image
+          example: https://cloudinary.com/
       description: Model containing user info
     
     LoginScheme:
@@ -461,8 +470,68 @@ components:
           description: Indication if the recipe is gluten free.
           example: false
 
-      Recipe:
-        type: object
+    Recipe:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: Recipe identifier.
+          example: 102
+        image:
+          type: string
+          description: Recipe image.
+          format: URL
+          example: https://spoonacular.com/recipeimages/655455-566x370.jpg
+        title:
+          type: string
+          description: Recipe name.
+          example: Simple Macaroni and Cheese.
+        readyInMinutes:
+          type: integer
+          description: The time takes to make this recipe.
+          example: 45
+        popularity:
+          type: integer
+          description: How many likes got this recipe.
+          example: 5987
+        vegetarian:
+          type: boolean
+          description: Indication if the recipe is vegetarian.
+          example: false
+        vegan:
+          type: boolean
+          description: Indication if the recipe is vegan.
+          example: false
+        glutenFree:
+          type: boolean
+          description: Indication if the recipe is gluten free.
+          example: false
+        isClicked:
+          type: boolean
+        Favorite:
+          type: boolean
+        instructions:
+          type: string
+        servings:
+          type: integer
+        description: 
+          type: string
+          description: The recipe itself.
+        ingredients:
+          type: array
+          items:
+            type: object
+            properties:
+              ingredient:
+                type: string
+              amount:
+                type: string
+            required: 
+              - ingredient
+              - amount
+
+    CreateFamilyRecipe:
+      type: object
         properties:
           id:
             type: integer
@@ -508,6 +577,17 @@ components:
           description: 
             type: string
             description: The recipe itself.
+
+          owner:
+            type: string
+            description: Username of the creator.
+            example: johndoe
+
+          whenToPrepare: 
+            type: string
+            description: The time to prepare.
+            example: holidays
+
           ingredients:
             type: array
             items:
@@ -521,102 +601,31 @@ components:
                 - ingredient
                 - amount
 
-      CreateFamilyRecipe:
-        type: object
-          properties:
-            id:
-              type: integer
-              description: Recipe identifier.
-              example: 102
-            image:
-              type: string
-              description: Recipe image.
-              format: URL
-              example: https://spoonacular.com/recipeimages/655455-566x370.jpg
-            title:
-              type: string
-              description: Recipe name.
-              example: Simple Macaroni and Cheese.
-            readyInMinutes:
-              type: integer
-              description: The time takes to make this recipe.
-              example: 45
-            popularity:
-              type: integer
-              description: How many likes got this recipe.
-              example: 5987
-            vegetarian:
-              type: boolean
-              description: Indication if the recipe is vegetarian.
-              example: false
-            vegan:
-              type: boolean
-              description: Indication if the recipe is vegan.
-              example: false
-            glutenFree:
-              type: boolean
-              description: Indication if the recipe is gluten free.
-              example: false
-            isClicked:
-              type: boolean
-            Favorite:
-              type: boolean
-            instructions:
-              type: string
-            servings:
-              type: integer
-            description: 
-              type: string
-              description: The recipe itself.
-
-            owner:
-              type: string
-              description: Username of the creator.
-              example: johndoe
-
-            whenToPrepare: 
-              type: string
-              description: The time to prepare.
-              example: holidays
-
-            ingredients:
-              type: array
-              items:
-                type: object
-                properties:
-                  ingredient:
-                    type: string
-                  amount:
-                    type: string
-                required: 
-                  - ingredient
-                  - amount
-
-      Search:
-        type: object
-        properties:
-          query:
-            type: string
-            description: Recipes name that the user want to search, the user can filter by cuisine, diet and intolerance.
-            required: true
-            example: Simple Macaroni and Cheese.
-          number:
-            type: integer
-            description: Number of recipes to return, the options are 5 10 15 and the default value is 5.
-            required: false
-            example: 5
-          cuisine:
-            type: string
-            description: List of categories cuisine that the logged in user can filter by them.
-            required: false
-            example: Italian
-          diet:
-            type: string
-            description: List of categories diet that the logged in user can filter by them.
-            required: false
-            example: Vegan
-          intolerance:
-            type: string
-            description: List of categories intolerance that the logged in user can filter by them.
-            required: false
-            example: Steak
+    Search:
+      type: object
+      properties:
+        query:
+          type: string
+          description: Recipes name that the user want to search, the user can filter by cuisine, diet and intolerance.
+          required: true
+          example: Simple Macaroni and Cheese.
+        number:
+          type: integer
+          description: Number of recipes to return, the options are 5 10 15 and the default value is 5.
+          required: false
+          example: 5
+        cuisine:
+          type: string
+          description: List of categories cuisine that the logged in user can filter by them.
+          required: false
+          example: Italian
+        diet:
+          type: string
+          description: List of categories diet that the logged in user can filter by them.
+          required: false
+          example: Vegan
+        intolerance:
+          type: string
+          description: List of categories intolerance that the logged in user can filter by them.
+          required: false
+          example: Steak
