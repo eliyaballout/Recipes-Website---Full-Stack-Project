@@ -80,6 +80,7 @@ Vue.config.productionTip = false;
 
 const shared_data = {
   server_domain: "http://localhost:3000",
+  //server_domain: "https://YOUR_DOMAIN",
   username: localStorage.username,
   login(username) {
     localStorage.setItem("username", username);

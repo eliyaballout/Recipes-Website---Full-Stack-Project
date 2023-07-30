@@ -1,5 +1,5 @@
 {
-  "name": "assignment-3-3",
+  "name": "flavorfusion",
   "version": "1.0.0",
   "scripts": {
     "serve": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",

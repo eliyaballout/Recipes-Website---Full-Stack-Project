@@ -28,11 +28,11 @@ app.use(express.static(path.join(__dirname, "public"))); //To serve static files
 //local:
 app.use(express.static(path.join(__dirname, "dist")));
 //remote:
-// app.use(express.static(path.join(__dirname, '../assignment-3-3-basic/dist')));
+// app.use(express.static(path.join(__dirname, '../Frontend/dist')));
 app.get("/",function(req,res)
 { 
   //remote: 
-  // res.sendFile(path.join(__dirname, '../assignment-3-3-basic/dist/index.html'));
+  // res.sendFile(path.join(__dirname, '../Backend/dist/index.html'));
   //local:
   res.sendFile(__dirname+"/index.html");
 
@@ -49,7 +49,7 @@ const corsConfig = {
 app.use(cors(corsConfig));
 app.options("*", cors(corsConfig));
 
-var port = process.env.PORT || "3000"; //local=3000 remote=80
+var port = "3000"; //local=3000 remote=80
 //#endregion
 const user = require("./routes/user");
 const recipes = require("./routes/recipes");
@@ -99,3 +99,6 @@ process.on("SIGINT", function () {
   }
   process.exit();
 });
+
+
+// module.exports = app;
